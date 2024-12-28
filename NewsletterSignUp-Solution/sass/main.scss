@@ -28,15 +28,28 @@ body {
   width: 100%;
   max-width: 1000px;
   @include flex(row, center, center, 3rem);
+  @include mobile {
+    flex-direction: column-reverse;
+    gap: 0;
+    padding: 0;
+    border-radius: 0;
+  }
 
   &__right {
     width: 50%;
-    object-fit: contain;
+    height: 50rem;
+    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
     @include flex(column, center, center);
-    img {
-      display: block;
+
+    @include mobile {
       width: 100%;
-      object-fit: cover;
+      height: 22rem;
+      background-size: contain;
+      background-position: top;
+      background-image: url(./assets/images/illustration-sign-up-mobile.svg);
     }
   }
 
@@ -44,19 +57,37 @@ body {
     width: 50%;
     padding: 2rem;
     @include flex(column, center, start, 3rem);
+    @include mobile {
+      width: 100%;
+      padding: 2rem 2rem;
+      gap: 1rem;
+    }
     h1 {
       @include text(5rem, 700, $color-dark-slate-grey);
+      @include mobile {
+        text-align: center;
+        font-size: 3.5rem;
+      }
     }
     p {
       @include text(1.8rem, 400, $color-dark-slate-grey);
+      @include mobile {
+        font-size: 1.5rem;
+      }
     }
 
     ul {
       list-style: none;
       @include flex(column, start, start, 1rem);
+      @include mobile {
+        margin-top: 1rem;
+      }
 
       li {
         @include text(1.5rem, 400, $color-dark-slate-grey);
+        @include mobile {
+          font-size: 1.2rem;
+        }
         @include flex(row, start, start, 1rem);
       }
     }
@@ -65,9 +96,15 @@ body {
       @include flex(column, start, start, 1rem);
       width: 100%;
       margin-top: 2rem;
+      @include mobile {
+        gap: 0.3rem;
+      }
 
       label {
         @include text(1.2rem, 700, $color-dark-slate-grey);
+        @include mobile {
+          font-size: 1rem;
+        }
       }
 
       input {
@@ -76,6 +113,10 @@ body {
         height: 5rem;
         border: 1px solid rgb($color-grey, 0.6);
         border-radius: 1rem;
+        @include mobile {
+          height: 4rem;
+          border-radius: 0.5rem;
+        }
 
         &:hover {
           cursor: pointer;
@@ -93,6 +134,11 @@ body {
         background-color: $color-dark-slate-grey;
         border-radius: 1rem;
         @include text(1.5rem, 700, $color-white);
+        @include mobile {
+          height: 4rem;
+          font-size: 1.2rem;
+          border-radius: 0.5rem;
+        }
 
         &:hover {
           background: linear-gradient(to right, #ff6b6b, #ff4ba7);

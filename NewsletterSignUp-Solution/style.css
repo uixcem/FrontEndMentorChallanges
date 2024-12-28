@@ -33,19 +33,35 @@ body {
   align-items: center;
   gap: 3rem;
 }
+@media (max-width: 480px) {
+  .card {
+    flex-direction: column-reverse;
+    gap: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+}
 .card__right {
   width: 50%;
-  object-fit: contain;
+  height: 50rem;
+  background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-.card__right img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
+@media (max-width: 480px) {
+  .card__right {
+    width: 100%;
+    height: 22rem;
+    background-size: contain;
+    background-position: top;
+    background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+  }
 }
 .card__left {
   width: 50%;
@@ -56,15 +72,33 @@ body {
   align-items: start;
   gap: 3rem;
 }
+@media (max-width: 480px) {
+  .card__left {
+    width: 100%;
+    padding: 2rem 2rem;
+    gap: 1rem;
+  }
+}
 .card__left h1 {
   font-size: 5rem;
   font-weight: 700;
   color: hsl(234, 29%, 20%);
 }
+@media (max-width: 480px) {
+  .card__left h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+}
 .card__left p {
   font-size: 1.8rem;
   font-weight: 400;
   color: hsl(234, 29%, 20%);
+}
+@media (max-width: 480px) {
+  .card__left p {
+    font-size: 1.5rem;
+  }
 }
 .card__left ul {
   list-style: none;
@@ -73,6 +107,11 @@ body {
   justify-content: start;
   align-items: start;
   gap: 1rem;
+}
+@media (max-width: 480px) {
+  .card__left ul {
+    margin-top: 1rem;
+  }
 }
 .card__left ul li {
   font-size: 1.5rem;
@@ -84,6 +123,11 @@ body {
   align-items: start;
   gap: 1rem;
 }
+@media (max-width: 480px) {
+  .card__left ul li {
+    font-size: 1.2rem;
+  }
+}
 .card__left form {
   display: flex;
   flex-direction: column;
@@ -93,10 +137,20 @@ body {
   width: 100%;
   margin-top: 2rem;
 }
+@media (max-width: 480px) {
+  .card__left form {
+    gap: 0.3rem;
+  }
+}
 .card__left form label {
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(234, 29%, 20%);
+}
+@media (max-width: 480px) {
+  .card__left form label {
+    font-size: 1rem;
+  }
 }
 .card__left form input {
   width: 100%;
@@ -104,6 +158,12 @@ body {
   height: 5rem;
   border: 1px solid rgba(145.86, 148.002, 160.14, 0.6);
   border-radius: 1rem;
+}
+@media (max-width: 480px) {
+  .card__left form input {
+    height: 4rem;
+    border-radius: 0.5rem;
+  }
 }
 .card__left form input:hover {
   cursor: pointer;
@@ -120,6 +180,13 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: hsl(0, 0%, 100%);
+}
+@media (max-width: 480px) {
+  .card__left form button {
+    height: 4rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+  }
 }
 .card__left form button:hover {
   background: linear-gradient(to right, #ff6b6b, #ff4ba7);
