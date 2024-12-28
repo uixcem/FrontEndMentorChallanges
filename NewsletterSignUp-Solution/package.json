@@ -1,0 +1,14 @@
+{
+  "name": "newslettersignup-solution",
+  "version": "1.0.0",
+  "description": "![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss:style.css --watch"
+  },
+  "author": "uixcem",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.83.0"
+  }
+}

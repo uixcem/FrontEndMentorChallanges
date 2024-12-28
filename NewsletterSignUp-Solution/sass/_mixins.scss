@@ -1,0 +1,24 @@
+@mixin flex(
+  $direction: row,
+  $justify: flex-start,
+  $align: stretch,
+  $gap: 2rem
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin text($size: 1rem, $weight: 400, $color: black) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
