@@ -47,10 +47,28 @@
             placeholder="email@company.com"
             required
           />
-          <button type="submit">Subscribe to monthly newsletter</button>
+          <button type="submit" class="submit-button">
+            Subscribe to monthly newsletter
+          </button>
         </form>
       </section>
       <section class="card__right"></section>
     </main>
+    <div class="card__success" style="display: none">
+      <img
+        class="card__success--img"
+        src="./assets/images/icon-success.svg"
+        alt="icon-success-image"
+      />
+      <h2 class="card__success--heading">Thanks for subscribing!</h2>
+      <p class="card__success--text">
+        The confirmation email has been sent to
+        <b> ash@loremcompany.com.</b> Please open it and click the button inside
+        to confirm your subscription.
+      </p>
+      <button class="card__success--button">Dissmiss message</button>
+    </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

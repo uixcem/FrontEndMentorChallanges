@@ -195,4 +195,75 @@ body {
   cursor: pointer;
 }
 
+.card__success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 50rem;
+  border-radius: 3rem;
+  padding: 7rem;
+  position: absolute;
+}
+@media (max-width: 480px) {
+  .card__success {
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    align-items: start;
+  }
+}
+.card__success--heading {
+  margin-top: 1rem;
+  font-size: 5rem;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+@media (max-width: 480px) {
+  .card__success--heading {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+}
+.card__success--text {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(234, 29%, 20%);
+}
+@media (max-width: 480px) {
+  .card__success--text {
+    font-size: 1.6rem;
+  }
+}
+.card__success--button {
+  margin-top: 2rem;
+  width: 100%;
+  height: 5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+}
+@media (max-width: 480px) {
+  .card__success--button {
+    height: 6rem;
+    width: 90%;
+    font-weight: 700;
+    position: absolute;
+    bottom: 5rem;
+  }
+}
+.card__success--button:hover {
+  background: linear-gradient(to right, #ff6b6b, #ff4ba7);
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
