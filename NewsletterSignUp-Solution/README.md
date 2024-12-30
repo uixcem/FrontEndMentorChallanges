@@ -69,11 +69,9 @@ document.querySelector("form").addEventListener("submit", function (e) {
 
 ### Links
 
-- Live Site: [View live project](#)
-- Code: [View repository](#)
+- Live Site: [View live project](https://newslettersignup-solution.netlify.app/)
+- Code: [View repository](https://github.com/uixcem/FrontEndMentorChallanges/tree/main/NewsletterSignUp-Solution)
 
 ## Author
 
 - Frontend Mentor - [@yourusername](uixcem)
-
-_Note: Just add your actual links and username where indicated with placeholders (#)_
