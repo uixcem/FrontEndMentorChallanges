@@ -23,10 +23,10 @@ body {
 
 .card {
   background-color: $color-white;
-  border-radius: 2rem;
+  border-radius: 4rem;
   padding: 3rem;
   width: 100%;
-  max-width: 900px;
+  max-width: 800px;
   @include flex(row, center, center, 0rem);
   @include mobile {
     flex-direction: column-reverse;
