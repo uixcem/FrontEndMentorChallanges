@@ -26,8 +26,8 @@ body {
   border-radius: 2rem;
   padding: 3rem;
   width: 100%;
-  max-width: 1000px;
-  @include flex(row, center, center, 3rem);
+  max-width: 900px;
+  @include flex(row, center, center, 0rem);
   @include mobile {
     flex-direction: column-reverse;
     gap: 0;
@@ -39,7 +39,7 @@ body {
     width: 50%;
     height: 50rem;
     background-image: url(./assets/images/illustration-sign-up-desktop.svg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
     @include flex(column, center, center);

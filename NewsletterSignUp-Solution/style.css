@@ -26,12 +26,12 @@ body {
   border-radius: 2rem;
   padding: 3rem;
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 0rem;
 }
 @media (max-width: 480px) {
   .card {
@@ -45,7 +45,7 @@ body {
   width: 50%;
   height: 50rem;
   background-image: url(./assets/images/illustration-sign-up-desktop.svg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
   display: flex;
