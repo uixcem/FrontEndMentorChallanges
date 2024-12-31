@@ -1,0 +1,49 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "grid" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: $font-size;
+  color: $color-black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "top1 top2 top3 top4"
+    "mid1 mid2 mid3 top4"
+    "bottom1 bottom2 bottom3 bottom4";
+
+  &__box1 {
+    grid-area: top1 top3 mid1 mid3;
+  }
+
+  &__box2 {
+    grid-area: top3 top4 mid3 mid4;
+  }
+
+  &__box3 {
+    grid-area: mid1 mid2 bottom1 bottom2;
+  }
+
+  &__box4 {
+    grid-area: mid2;
+  }
+
+  &__box5 {
+    grid-area: top1 mid1 bottom1;
+  }
+}
