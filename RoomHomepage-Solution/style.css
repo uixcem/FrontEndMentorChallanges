@@ -15,24 +15,47 @@ body {
 
 .main {
   display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 2fr 1fr;
-  grid-template-areas: "top1 top2 top3 top4" "mid1 mid2 mid3 top4" "bottom1 bottom2 bottom3 bottom4";
+  grid-template-columns: 4fr 6fr 4fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "mainbox1 mainbox1 mainbox2" "mainbox3 mainbox4 mainbox5";
+  height: 100vh;
+  width: 100%;
 }
-.main__box1 {
-  grid-area: top1 top3 mid1 mid3;
+
+.main__mainbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  color: white;
 }
-.main__box2 {
-  grid-area: top3 top4 mid3 mid4;
+
+.main__mainbox1 {
+  background-color: #cccccc;
+  color: black;
+  grid-area: mainbox1;
 }
-.main__box3 {
-  grid-area: mid1 mid2 bottom1 bottom2;
+
+.main__mainbox2 {
+  background-color: #775555;
+  grid-area: mainbox2;
 }
-.main__box4 {
-  grid-area: mid2;
+
+.main__mainbox3 {
+  background-color: #cc0000;
+  grid-area: mainbox3;
 }
-.main__box5 {
-  grid-area: top1 mid1 bottom1;
+
+.main__mainbox4 {
+  background-color: #ffff00;
+  color: black;
+  grid-area: mainbox4;
+}
+
+.main__mainbox5 {
+  background-color: #0000ff;
+  grid-area: mainbox5;
 }
 
 /*# sourceMappingURL=style.css.map */
